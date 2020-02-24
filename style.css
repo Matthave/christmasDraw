@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  background-image: url(/img/present.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0 15px;
+  font-size: 50px;
+  font-family: "Mountains of Christmas", cursive;
+  letter-spacing: 4px;
+  transition: 0.5s linear;
+  text-shadow: 1px 2px black;
+}
+
+ul {
+  text-align: center;
+}
+
+ul li {
+  margin: 10px 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-family: "Mountains of Christmas", cursive;
+  font-weight: 700;
+  list-style: none;
+  transition: 0.5s linear;
+}
+
+li.placeHolder {
+  opacity: 0;
+  color: green;
+  text-shadow: 1px 1px black;
+}
+
+span {
+  font-weight: 500;
+  color: rgba(0, 80, 0, 80%);
+  font-family: "Mountains of Christmas", cursive;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+form {
+  text-align: center;
+}
+
+form input {
+  font-size: 25px;
+  margin-top: 5px;
+  padding: 2.5px;
+  border: 1.5px solid black;
+  opacity: 75%;
+  outline: none;
+}
+
+form input:hover {
+  border: 1.5px solid firebrick;
+}
+
+button {
+  display: block;
+  padding: 10px 45px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px dotted yellow;
+  background-color: rgb(197, 46, 46);
+  box-shadow: 0px 0px 0px 2px rgb(197, 46, 46);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 20px;
+}
+
+button:hover {
+  border: 2px dotted white;
+  background-color: rgb(0, 100, 0);
+  box-shadow: 0px 0px 0px 2px rgb(0, 100, 0);
+  letter-spacing: 5px;
+  color: white;
+}
+
+div.wrap {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 40%);
+  box-shadow: 0px 0px 10px 3px black;
+  text-align: center;
+}
+
+audio {
+  position: absolute;
+  bottom: 2%;
+  right: -50%;
+  transition: 0.3s;
+}
+
+.reload {
+  position: absolute;
+  top: 3%;
+  right: 1%;
+  cursor: pointer;
+  animation: reloadIcon 8s linear infinite both;
+}
+
+.soundIcon {
+  position: absolute;
+  bottom: 3%;
+  right: 1%;
+  cursor: pointer;
+}
+
+.soundIcon img {
+  display: block;
+  color: white;
+  width: 40px;
+}
+
+.active {
+  bottom: 2%;
+  right: 5%;
+  opacity: 75%;
+}
+
+@keyframes reloadIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  93% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  body {
+    background-attachment: fixed;
+    background-repeat: none;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  button {
+    display: block;
+    padding: 10px 45px;
+    margin: 60px auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px dotted yellow;
+    background-color: rgb(197, 46, 46);
+    box-shadow: 0px 0px 0px 2px rgb(197, 46, 46);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    font-family: "Mountains of Christmas", cursive;
+    font-size: 30px;
+  }
+
+  form input {
+    font-size: 35px;
+    margin-top: 5px;
+    padding: 2.5px;
+    border: 1.5px solid black;
+  }
+
+  ul li {
+    margin: 10px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 45px;
+    font-family: "Mountains of Christmas", cursive;
+    font-weight: 700;
+    list-style: none;
+    transition: 0.5s linear;
+  }
+
+  span {
+    font-weight: 500;
+    color: rgba(0, 80, 0, 80%);
+    font-family: "Mountains of Christmas", cursive;
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  audio {
+    bottom: 30%;
+    right: -10%;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  .active {
+    bottom: 30%;
+    right: -10%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 920px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  button {
+    display: block;
+    padding: 10px 45px;
+    margin: 60px auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px dotted yellow;
+    background-color: rgb(197, 46, 46);
+    box-shadow: 0px 0px 0px 2px rgb(197, 46, 46);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    font-family: "Mountains of Christmas", cursive;
+    font-size: 25px;
+  }
+
+  form input {
+    font-size: 25px;
+    margin-top: 5px;
+    padding: 2.5px;
+    border: 1.5px solid black;
+  }
+
+  ul li {
+    margin: 10px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 35;
+    font-family: "Mountains of Christmas", cursive;
+    font-weight: 700;
+    list-style: none;
+    transition: 0.5s linear;
+  }
+
+  span {
+    font-weight: 500;
+    color: rgba(0, 80, 0, 80%);
+    font-family: "Mountains of Christmas", cursive;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  audio {
+    bottom: 30%;
+    right: -12%;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  .active {
+    bottom: 30%;
+    right: -12%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 620px) and (orientation: portrait) {
+  body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  button {
+    padding: 10px 45px;
+    margin: 35px auto;
+    font-size: 20px;
+  }
+
+  form input {
+    font-size: 25px;
+  }
+
+  ul li {
+    font-size: 25px;
+  }
+
+  span {
+    font-size: 25px;
+  }
+
+  audio {
+    bottom: 40%;
+    right: -17.5%;
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+
+  .active {
+    bottom: 40%;
+    right: -17.5%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+  audio {
+    bottom: 40%;
+    right: -23%;
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+
+  .active {
+    bottom: 40%;
+    right: -23%;
+    opacity: 50%;
+  }
+
+  .reload {
+    top: 88%;
+    left: 1%;
+  }
+}
+
+@media (max-width: 460px) and (orientation: portrait) {
+  h1 {
+    font-size: 40px;
+  }
+
+  button {
+    padding: 10px 45px;
+    margin: 35px auto;
+    font-size: 15px;
+  }
+
+  audio {
+    bottom: 42%;
+    right: -25%;
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+
+  .active {
+    bottom: 42%;
+    right: -25%;
+    opacity: 50%;
+  }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+  audio {
+    bottom: 43%;
+    right: -33%;
+    transform: rotate(90deg);
+  }
+
+  .active {
+    bottom: 43%;
+    right: -33%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  button {
+    padding: 10px 45px;
+    margin: 35px auto;
+    font-size: 12.5px;
+  }
+
+  form input {
+    font-size: 20px;
+  }
+}
